@@ -1,37 +1,27 @@
 @font-face {
     font-family: "Roboto Slab";
-    src: url(../fonts/RobotoSlab-Regular.woff) format("woff"),
-        url(../fonts/RobotoSlab-Regular.eot) format("eot"),
-        url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
+    src: url(../fonts/RobotoSlab-Regular.woff) format("woff"), url(../fonts/RobotoSlab-Regular.eot) format("eot"), url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto Slab Bold";
-    src: url(../fonts/RobotoSlab-Bold.woff) format("woff"),
-        url(../fonts/RobotoSlab-Bold.eot) format("eot"),
-        url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
+    src: url(../fonts/RobotoSlab-Bold.woff) format("woff"), url(../fonts/RobotoSlab-Bold.eot) format("eot"), url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat Regular";
-    src: url(../fonts/Montserrat-Regular.woff) format("woff"),
-        url(../fonts/Montserrat-Regular.woff2) format("woff2"),
-        url(../fonts/Montserrat-Regular.otf) format("opentype"),
-        url(../fonts/Montserrat-Regular.ttf) format("truetype");
+    src: url(../fonts/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.otf) format("opentype"), url(../fonts/Montserrat-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat Bold";
-    src: url(../fonts/Montserrat-Bold.woff) format("woff"),
-        url(../fonts/Montserrat-Bold.woff2) format("woff2"),
-        url(../fonts/Montserrat-Bold.otf) format("opentype"),
-        url(../fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(../fonts/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.otf) format("opentype"), url(../fonts/Montserrat-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -72,13 +62,11 @@ body {
     content: "";
     background-color: #000000;
     z-index: 1;
-
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-
     opacity: 0.45;
 }
 
@@ -92,14 +80,11 @@ body {
 .top-panel {
     display: flex;
     flex-wrap: wrap;
-
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
-
     align-items: center;
     justify-content: space-between;
-
     position: relative;
     z-index: 2;
 }
@@ -148,7 +133,6 @@ body {
     width: 600px;
     height: 100px;
     padding-top: 240px;
-
     margin-right: auto;
     margin-left: auto;
 }
@@ -221,18 +205,14 @@ body {
 .section-title::after {
     content: "";
     display: block;
-
     width: 50px;
     height: 2px;
     background-color: #555555;
-
     margin-top: 13px;
     margin-left: auto;
     margin-right: auto;
-
     position: relative;
     z-index: 2;
-
 }
 
 .subtitle {
@@ -246,7 +226,6 @@ body {
     padding-bottom: 70px;
 }
 
-
 .servises-carts {
     display: flex;
     flex-wrap: nowrap;
@@ -258,7 +237,6 @@ body {
     margin: 0;
     width: 350px;
     position: relative;
-
 }
 
 .servises-icons-1 {
@@ -390,9 +368,47 @@ body {
     color: #c0301c;
 }
 
-.works-picture{
+.works-picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
+}
+
+.work-picture {
+    padding: 15px 0;
+}
+
+.blog-post {
+    display: flex;
+}
+
+.blog-post-1::after {
+    content: '';
+    width: 1140px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.blog-post-img {}
+
+.blog-post-cart {
+    display: flex;
+}
+
+.blog-post-date {
+    width: 76px;
+    height: 76px;
+    background-color: #f8f8f8;
+    border: 2px solid #555555;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #777777;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -412,15 +428,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
+.clients {
+    display: flex;
+}
 
 .footer {
     background-color: #c0301c;
@@ -430,7 +440,6 @@ body {
     max-width: 1140px;
     height: 80px;
     padding-left: 0;
-
     background-color: #f4f7f6;
     margin-left: auto;
     margin-right: auto;
@@ -442,12 +451,10 @@ body {
     padding-left: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-
     position: relative;
     z-index: 1;
     top: 0;
@@ -464,7 +471,6 @@ body {
     height: 35px;
     border-radius: 18px;
     border-color: #ffffff;
-
 }
 
 .socials-link {
@@ -482,7 +488,6 @@ body {
 
 .socials-link-twitter {
     background-image: url("../images/fa-twitter.png");
-
 }
 
 .socials-link-text {
