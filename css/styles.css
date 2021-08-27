@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Roboto Slab";
     src: url(../fonts/RobotoSlab-Regular.woff) format("woff"),
-         url(../fonts/RobotoSlab-Regular.eot) format("eot"),
-         url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
+        url(../fonts/RobotoSlab-Regular.eot) format("eot"),
+        url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -10,18 +10,18 @@
 @font-face {
     font-family: "Roboto Slab Bold";
     src: url(../fonts/RobotoSlab-Bold.woff) format("woff"),
-         url(../fonts/RobotoSlab-Bold.eot) format("eot"),
-         url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
+        url(../fonts/RobotoSlab-Bold.eot) format("eot"),
+        url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     src: url(../fonts/Montserrat-Regular.woff) format("woff"),
-         url(../fonts/Montserrat-Regular.woff2) format("woff2"),
-         url(../fonts/Montserrat-Regular.otf) format("opentype"),
-         url(../fonts/Montserrat-Regular.ttf) format("truetype");
+        url(../fonts/Montserrat-Regular.woff2) format("woff2"),
+        url(../fonts/Montserrat-Regular.otf) format("opentype"),
+        url(../fonts/Montserrat-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -29,9 +29,9 @@
 @font-face {
     font-family: "Montserrat Bold";
     src: url(../fonts/Montserrat-Bold.woff) format("woff"),
-         url(../fonts/Montserrat-Bold.woff2) format("woff2"),
-         url(../fonts/Montserrat-Bold.otf) format("opentype"),
-         url(../fonts/Montserrat-Bold.ttf) format("truetype");
+        url(../fonts/Montserrat-Bold.woff2) format("woff2"),
+        url(../fonts/Montserrat-Bold.otf) format("opentype"),
+        url(../fonts/Montserrat-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -111,7 +111,7 @@ body {
     font-size: 14px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
 }
 
@@ -151,7 +151,7 @@ body {
     font-size: 48px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
     text-transform: uppercase;
     line-height: 44px;
@@ -164,7 +164,7 @@ body {
     font-size: 19px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
     text-transform: capitalize;
     margin-right: auto;
@@ -187,7 +187,7 @@ body {
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-transform: uppercase;
     text-align: center;
     padding-top: 1em;
@@ -208,7 +208,7 @@ body {
     line-height: 24px;
     color: #555555;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
 }
 
@@ -303,7 +303,7 @@ body {
     line-height: 24px;
     color: #555555;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
 }
 
@@ -339,7 +339,7 @@ body {
     font-size: 14px;
     color: #555555;
     font-weight: 400;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     text-align: center;
     text-transform: uppercase;
     padding-top: 18px;
@@ -394,17 +394,34 @@ body {
     display: flex;
 }
 
+.blog-post-1 {
+    margin-bottom: 80px;
+    position: relative;
+}
+
 .blog-post-1::after {
-    content: '';
+    content: "";
+    display: block;
     width: 1140px;
     height: 1px;
     background-color: #dddddd;
+    position: absolute;
+    top: 366px;
+    z-index: 2;
 }
 
 .blog-post-img {}
 
 .blog-post-cart {
     display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.blog-post-cart-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
 }
 
 .blog-post-date {
@@ -419,28 +436,127 @@ body {
     font-family: "Montserrat";
     text-align: center;
     padding-top: 10px;
+    margin-right: 15px;
+    box-sizing: border-box;
 }
 
+.blog-post-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #c0301c;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.blog-post-author {
+    font-size: 13px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: left;
+    font-style: italic;
+}
 
+.red {
+    color: red;
+}
 
+.blog-post-text {
+    width: 639px;
+    height: 111px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    margin-bottom: 34px;
+}
 
+.blog-post-button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: left;
+    text-transform: uppercase;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.blog-post-button:hover {
+    color: #c0301c;
+}
 
 .clients {
     display: flex;
+    flex-direction: column;
 }
+
+.clients-logo {
+    display: flex;
+    width: 898px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients-text {
+    width: 790px;
+    height: 113px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    font-style: italic;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clients-author {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bullets {
+    display: flex;
+    width: 54px;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bullet {
+    width: 13px;
+    height: 13px;
+    border-radius: 6px;
+    background-color: #dddddd;
+}
+
+.bullet:hover {
+    background-color: #c0301c;
+}
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     background-color: #c0301c;
@@ -498,6 +614,8 @@ body {
 
 .socials-link-twitter {
     background-image: url("../images/fa-twitter.png");
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .socials-link-text {
