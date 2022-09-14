@@ -387,8 +387,8 @@ body {
 }
 
 /* Navigation item styles */
-div.ant-carousel-arrow-left,
-div.ant-carousel-arrow-right {
+.ant-carousel-arrow-left,
+.ant-carousel-arrow-right {
   width: 50px;
   height: 40px;
   position: absolute;
@@ -398,27 +398,27 @@ div.ant-carousel-arrow-right {
   display: block;
 }
 
-div.ant-carousel-arrow-left {
+.ant-carousel-arrow-left {
   left: 40px;
   top: 40%;
   background-image: url("../images/fa-angle-left2.png");
   background-repeat: no-repeat;
 }
 
-div.ant-carousel-arrow-right {
+.ant-carousel-arrow-right {
   right: 40px;
   top: 40%;
   background-image: url("../images/fa-angle-left1.png");
   background-repeat: no-repeat;
 }
 
-div.ant-carousel-arrow-left: hover {
+.ant-carousel-arrow-left:hover {
   background-color: red;
   background-size: 30px 30px;
   opacity: 1;
 }
 
-div.ant-carousel-arrow-right: hover {
+.ant-carousel-arrow-right:hover {
   background-color: red;
   background-size: 30px 30px;
   opacity: 1;
